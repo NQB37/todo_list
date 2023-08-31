@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    background-image: url("./background.webp");
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    width: 350px;
+    min-height: 150px;
+    max-height: 500px;
+
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+
+    border-radius: 5px;
+    padding: 10px;
+
+    text-align: center;
+
+    overflow-y: scroll;
+
+    transform: translateY(-50%);
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.container h1 {
+    margin: 5px auto;
+}
+
+.taskinput {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 30px;
+
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    outline: none;
+
+    padding: 0 15px;
+}
+
+.control {
+    padding: 18px 2px;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.control .active {
+    color: red;
+}
+
+.control span {
+    cursor: pointer;
+}
+
+.clearBtn {
+    padding: 5px 10px;
+
+    color: white;
+    background: #1e293b;
+    opacity: 0.8;
+
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: all ease 0.5s;
+    transform: translateY(-2.5px);
+
+    cursor: pointer;
+}
+
+.clearBtn:active {
+    opacity: 0.9;
+    transform: scale(0.95);
+}
+
+.taskBox {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.taskBox li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.taskBox p {
+    cursor: pointer;
+}
+
+.taskBox .inputTest.checked {
+    text-decoration: line-through;
+}
+
+.taskBox li i {
+    padding: 0 5px;
+    cursor: pointer;
+}
