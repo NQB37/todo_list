@@ -15,12 +15,13 @@ inputTask.addEventListener("keypress", (e) => {
                 text: inputTask.value,
                 status: "pending",
             });
+            inputTask.value = "";
         } else {
             isEdit = false;
             tasks[editId].text = isTextValid;
+            inputTask.value = "";
         }
     }
-    inputTask.value = "";
     localStorage.setItem("tasks", JSON.stringify(tasks));
     showTask(document.querySelector("span.active").id);
 });
