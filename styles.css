@@ -30,8 +30,6 @@ body {
     text-align: center;
 
     overflow-y: scroll;
-
-    transform: translateY(-50%);
 }
 
 .container::-webkit-scrollbar {
